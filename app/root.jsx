@@ -19,6 +19,10 @@ export function links(){
     return[
         {
             rel: 'stylesheet',
+            href: 'https://necolas.github.io/normalize.css/'
+        },
+        {
+            rel: 'stylesheet',
             href: styles
         },
         {
