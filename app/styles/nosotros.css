@@ -1,0 +1,21 @@
+:root {
+    --primary: #e99401;
+    --black: #262626;
+    --white: #FFF;
+    --fuente-principal: 'Outfit', sans-serif;
+}
+
+.nosotros .contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media (min-width: 768px) {  
+    .nosotros .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
