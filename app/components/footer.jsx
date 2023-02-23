@@ -9,11 +9,12 @@ export const Footer = () => {
         <footer className="footer">
            <div className="contenedor contenido">
                 <Navegacion />
-
-                <p className="copyright">{new Date().getFullYear() } Todos los derechos reservados©</p>
-                <Link to="/">
-                    <img src={logo} alt="Imagen Logo" className='logo'/>
-                </Link>
+                <div className="derechos">
+                    <p className="copyright">{new Date().getFullYear() } Todos los derechos reservados©</p>
+                    <Link to="/">
+                        <img src={logo} alt="Imagen Logo" className='logo'/>
+                    </Link>
+                </div>
            </div>
         </footer>
     )

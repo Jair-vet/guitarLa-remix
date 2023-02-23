@@ -112,6 +112,15 @@ main {
         flex-direction: row;
     }
 }
+.footer .derechos{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {  
+    .footer .derechos{
+        flex-direction: column-reverse;
+    }
+}
 .footer .navegacion a,
 .footer .copyright {
     color: var(--white);
