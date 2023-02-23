@@ -5,7 +5,6 @@ import logo from '../../public/img/logo.svg'
 export const Header = () => {
 
     const location = useLocation()
-    console.log(location);
 
   return (
     <header className="header">
