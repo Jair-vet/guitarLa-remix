@@ -23,7 +23,7 @@ export function links(){
     return[
         {
             rel: 'stylesheet',
-            href: 'https://necolas.github.io/normalize.css/'
+            href: 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'
         },
         {
             rel: 'stylesheet',
