@@ -1,4 +1,6 @@
 import { Navegacion } from "./navegacion"
+import { Link } from '@remix-run/react'
+import logo from '../../public/img/logo.svg'
 
 
 export const Footer = () => {
@@ -9,6 +11,9 @@ export const Footer = () => {
                 <Navegacion />
 
                 <p className="copyright">{new Date().getFullYear() } Todos los derechos reservados©</p>
+                <Link to="/">
+                    <img src={logo} alt="Imagen Logo" className='logo'/>
+                </Link>
            </div>
         </footer>
     )
