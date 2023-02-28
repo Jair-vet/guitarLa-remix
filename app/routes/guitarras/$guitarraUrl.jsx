@@ -2,6 +2,15 @@ import { useLoaderData } from '@remix-run/react';
 import { getGuitarra } from '~/models/guitarras.server';
 import styles from '~/styles/guitarras.css'
 
+export function meta({data}){
+    return(
+        {
+            title: `GuitarLa - ${data.data[0].attributes.nombre}`,
+            descripcion: `Guitarras, venta de guitarras, guitarra ${data.data[0].attributes.nombre}`
+        }
+    )
+}
+
 export function links() {
     return [
       {
