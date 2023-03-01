@@ -23,6 +23,10 @@
     font-weight: 900;
     font-size: 2.8rem;
 }
+.post .fecha {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
 .post .resumen {
     display: -webkit-box;
     -webkit-box-orient: vertical;
