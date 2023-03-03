@@ -1,7 +1,7 @@
 import { useLoaderData } from '@remix-run/react';
 import { getPosts } from '~/models/posts.server';
-import { Post } from '~/components/post';
 import styles from '~/styles/block.css'
+import { ListadoPosts } from '../components/listado-posts';
 
 
 export function meta() {
@@ -31,15 +31,9 @@ function Block() {
 
     return (
       <main className="contenedor">
-        <h2 className="heading">Blog</h2>
-        <div className="blog">
-          {posts.map(post => (
-            <Post 
-              key={post.id}
-              post={post.attributes}
-            />
-          ))}
-        </div>
+        <ListadoPosts 
+          posts={posts}
+        />
       </main>
     )
 }
