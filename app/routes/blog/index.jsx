@@ -1,7 +1,6 @@
 import { useLoaderData } from '@remix-run/react';
 import { getPosts } from '~/models/posts.server';
-import styles from '~/styles/block.css'
-import { ListadoPosts } from '../components/listado-posts';
+import { ListadoPosts } from '~/components/listado-posts';
 
 
 export function meta() {
@@ -11,14 +10,6 @@ export function meta() {
   }
 }
 
-export function links() {
-  return [
-    {
-      rel: 'stylesheet',
-      href: styles
-    },
-  ]
-}
 
 export async function loader(){
   const posts = await getPosts()
@@ -30,11 +21,9 @@ function Block() {
     const posts = useLoaderData()
 
     return (
-      <main className="contenedor">
         <ListadoPosts 
-          posts={posts}
+            posts={posts}
         />
-      </main>
     )
 }
 

@@ -6,7 +6,7 @@ import { ListadoPosts } from '../components/listado-posts';
 import { getCurso } from '../models/curso.server';
 import { Curso } from '../components/curso';
 import stylesGuitarras from '~/styles/guitarras.css';
-import stylesPosts from '~/styles/block.css';
+import stylesPosts from '~/styles/blog.css';
 import stylesCurso from '~/styles/curso.css';
 
 
