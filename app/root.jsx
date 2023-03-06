@@ -10,6 +10,7 @@ import {
 import styles from '~/styles/index.css'
 import { Header } from '~/components/header'
 import { Footer } from '~/components/footer'
+import { useState } from 'react'
 
 
 export function meta(){
@@ -49,9 +50,20 @@ export function links(){
 }
 
 export default function App() {
+    
+    const [carrito, setCarrito] = useState([])
+
+    const agregarCarito = guitarra => {
+        setCarrito([...carrito, guitarra])
+    }
+
     return(
         <Document>
-            <Outlet />
+            <Outlet
+                context={{
+                    agregarCarito
+                }}
+            />
         </Document>
     )
 }
