@@ -5,7 +5,7 @@ import { ListadoPosts } from '~/components/listado-posts';
 
 export function meta() {
   return {
-    title: 'GuitarLA - Block',
+    title: 'GuitarLA - Blog',
     description: 'Blogs de musica'
   }
 }
