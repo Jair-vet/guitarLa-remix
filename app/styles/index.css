@@ -63,6 +63,7 @@ main {
 }
 .header .navegacion{
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin-top: 60px;
 }
@@ -81,6 +82,9 @@ main {
     transition-property: background-color;
     transition-duration: 300ms;
     border-radius: .5rem;
+}
+.header .navegacion img{
+    width: 3rem;
 }
 .header .navegacion a:hover,
 .header .active{
