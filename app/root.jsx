@@ -75,7 +75,8 @@ export default function App() {
         <Document>
             <Outlet
                 context={{
-                    agregarCarito
+                    agregarCarito,
+                    carrito
                 }}
             />
         </Document>
