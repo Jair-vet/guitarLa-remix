@@ -69,6 +69,11 @@ function Carrito() {
                         <p className="precio">$ <span>{producto.precio}</span></p>
                         <p className="subtotal">$Subtotal: <span>{producto.cantidad * producto.precio}</span></p>
                       </div>
+
+                      <button
+                        type='button'
+                        className='btn_eliminar'
+                      >X</button>
                     </div>
                   ))
                 )}
