@@ -25,6 +25,7 @@ function Carrito() {
 
   const [total, setTotal] = useState(0)
   const { carrito, actualizarCantidad } = useOutletContext()
+  
   useEffect(() => {
     const calculoTotal = carrito.reduce( (total, producto) => total + (producto.cantidad * producto.precio), 0)
     setTotal(calculoTotal)
